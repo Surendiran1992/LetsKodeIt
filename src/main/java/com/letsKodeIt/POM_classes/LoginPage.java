@@ -9,7 +9,8 @@ import Base.BasePage;
 public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
+    	this.driver = driver;
     }
 
     /***

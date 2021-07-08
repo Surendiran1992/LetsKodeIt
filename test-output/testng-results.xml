@@ -1,29 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-07T12:01:20 IST" name="Default suite" finished-at="2021-07-07T12:01:48 IST" duration-ms="28092">
+  <suite started-at="2021-07-08T08:42:55 IST" name="Regression Test Suite" finished-at="2021-07-08T08:43:18 IST" duration-ms="23384">
     <groups>
     </groups>
-    <test started-at="2021-07-07T12:01:20 IST" name="Default test" finished-at="2021-07-07T12:01:48 IST" duration-ms="28092">
+    <test started-at="2021-07-08T08:42:55 IST" name="Application Test" finished-at="2021-07-08T08:43:18 IST" duration-ms="23384">
       <class name="com.letsKodeIt.test_classes.LoginTests">
-        <test-method is-config="true" signature="commonsetUp()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@5bd03f44]" started-at="2021-07-07T12:01:20 IST" name="commonsetUp" finished-at="2021-07-07T12:01:31 IST" duration-ms="11055" status="PASS">
+        <test-method is-config="true" signature="commonsetUp(java.lang.String)[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@72a7c7e0]" started-at="2021-07-08T08:42:55 IST" name="commonsetUp" finished-at="2021-07-08T08:43:04 IST" duration-ms="9558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonsetUp -->
-        <test-method signature="testLogin()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@5bd03f44]" started-at="2021-07-07T12:01:31 IST" name="testLogin" finished-at="2021-07-07T12:01:41 IST" duration-ms="10176" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@72a7c7e0]" started-at="2021-07-08T08:43:04 IST" name="testLogin" finished-at="2021-07-08T08:43:13 IST" duration-ms="8315" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.letsKodeIt.Base.CheckPoint.markFinal(CheckPoint.java:85)
+at com.letsKodeIt.test_classes.LoginTests.testLogin(LoginTests.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@5bd03f44]" started-at="2021-07-07T12:01:41 IST" name="afterMethod" finished-at="2021-07-07T12:01:48 IST" duration-ms="6434" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@72a7c7e0]" started-at="2021-07-08T08:43:13 IST" name="afterMethod" finished-at="2021-07-08T08:43:17 IST" duration-ms="4430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="commontearDown()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@5bd03f44]" started-at="2021-07-07T12:01:48 IST" name="commontearDown" finished-at="2021-07-07T12:01:48 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="commontearDown()[pri:0, instance:com.letsKodeIt.test_classes.LoginTests@72a7c7e0]" started-at="2021-07-08T08:43:17 IST" name="commontearDown" finished-at="2021-07-08T08:43:18 IST" duration-ms="1046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commontearDown -->
       </class> <!-- com.letsKodeIt.test_classes.LoginTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Application Test -->
+  </suite> <!-- Regression Test Suite -->
 </testng-results>

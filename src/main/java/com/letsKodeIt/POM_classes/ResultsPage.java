@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import Base.BasePage;
+
 import java.util.List;
 
-public class ResultsPage {
+public class ResultsPage extends BasePage{
 
     public ResultsPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
+    	this.driver = driver;
     }
 
     public WebDriver driver;

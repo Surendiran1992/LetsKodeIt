@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.letsKodeIt.test_classes.AllCoursesTests">
+      <class name="com.letsKodeIt.test_classes.LoginTests">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="filterByCategory"/>
+          <include name="commonsetUp"/>
+          <include name="testLogin"/>
+          <include name="commontearDown"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.letsKodeIt.test_classes.AllCoursesTests -->
+      </class> <!-- com.letsKodeIt.test_classes.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

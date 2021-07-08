@@ -5,12 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Base.BasePage;
 //import org.openqa.selenium.WebElement;
 import utilities.Util;
 
-public class NavigationPage {
+public class NavigationPage extends BasePage {
 
 	public NavigationPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
